@@ -1,0 +1,39 @@
+/* --------------------------- DIVS --------------------------- */
+.div-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.div-item {
+    flex: 1 1 30%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.div-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.div-item p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .div-container {
+        flex-direction: column;
+        text-align: left;
+    }
+    .div-item {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+}
