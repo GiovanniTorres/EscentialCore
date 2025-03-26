@@ -1,63 +1,79 @@
 /* Estilos generales del footer */
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+    background: linear-gradient(to right, #111, #333);
+    color: white;
+    padding: 20px 10px;
     text-align: center;
 }
 
-/* Contenedor de los items */
+/* Contenedor del footer */
 .footer-container {
     display: flex;
-    justify-content: space-around; /* Distribuye los items horizontalmente */
-    flex-wrap: wrap; /* Permite que los items se ajusten en dispositivos pequeños */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
 }
 
-/* Estilos de cada item */
-.footer-item {
-    margin: 10px;
-    flex: 1 1 30%; /* Cada item toma el 30% de la pantalla, pero puede ajustarse */
+/* Secciones del footer */
+.footer-section {
+    flex: 1;
+    min-width: 250px;
     padding: 10px;
 }
 
-/* Títulos dentro del footer */
-.footer-item h3 {
-    margin-bottom: 10px;
+/* Títulos */
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
 }
 
-/* Estilos de los enlaces */
-.footer-item a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.footer-item a:hover {
-    color: #FFD700;
-}
-
-/* Para los listados */
-.footer-item ul {
-    list-style-type: none;
+/* Enlaces */
+.footer-section ul {
+    list-style: none;
     padding: 0;
 }
 
-.footer-item li {
-    margin: 5px 0;
+.footer-section ul li {
+    margin: 8px 0;
 }
 
-/* Estilos para el pie de página */
-.footer-bottom {
-    margin-top: 20px;
-    font-size: 14px;
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-/* Estilos para pantallas pequeñas */
-@media screen and (max-width: 768px) {
+.footer-section ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Redes sociales */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links a {
+    font-size: 1.8rem;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+    color: #ffcc00;
+}
+
+/* Responsive: Apilar en móviles */
+@media (max-width: 768px) {
     .footer-container {
-        flex-direction: column; /* Los items se alinean verticalmente */
-        text-align: left; /* Alineación a la izquierda */
+        flex-direction: column;
+        text-align: center;
     }
-    .footer-item {
-        flex: 1 1 100%; /* Cada item toma el 100% del ancho */
+
+    .social-links {
+        justify-content: center;
     }
 }
