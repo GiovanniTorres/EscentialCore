@@ -1,28 +1,31 @@
-<footer class="footer">
+<footer>
     <div class="footer-container">
-        <div class="footer-section">
-            <h3>Sobre Nosotros</h3>
-            <p>Somos EscentialCore, creando entornos web eficientes y atractivos.</p>
-        </div>
-        <div class="footer-section">
-            <h3>Enlaces Rápidos</h3>
+        <div class="footer-item">
+            <h3>Enlaces</h3>
             <ul>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Servicios</a></li>
                 <li><a href="#">Contacto</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
             </ul>
         </div>
-        <div class="footer-section">
-            <h3>Síguenos</h3>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
+        <div class="footer-item">
+            <h3>Redes Sociales</h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+        <div class="footer-item">
+            <h3>Contacto</h3>
+            <p>Email: contacto@miempresa.com</p>
+            <p>Teléfono: +123 456 7890</p>
+            <p>Dirección: Calle Ficticia 123, Ciudad, País</p>
         </div>
     </div>
     <div class="footer-bottom">
-        <p>&copy; <?php echo date("Y"); ?> EscentialCore. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Mi Empresa. Todos los derechos reservados.</p>
     </div>
-<link rel="stylesheet" href="/footer.css">
 </footer>
