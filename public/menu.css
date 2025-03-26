@@ -48,14 +48,31 @@
     display: none;
     flex-direction: column;
     cursor: pointer;
+    padding: 10px;
+    transition: all 0.3s ease;
+    z-index: 100; /* Asegura que siempre esté encima del contenido */
 }
 
 .menu-toggle .bar {
     background: white;
-    width: 25px;
-    height: 3px;
-    margin: 3px 0;
-    transition: 0.3s;
+    width: 30px;
+    height: 4px;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+/* Cuando se active el menú hamburguesa */
+.menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg); /* Efecto de la primera barra */
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+    opacity: 0; /* La segunda barra desaparece */
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg); /* Efecto de la tercera barra */
 }
 
 /* ✅ RESPONSIVE AUTOMÁTICO */
@@ -70,6 +87,7 @@
         background: rgba(0, 0, 0, 0.9);
         padding: 10px 0;
         text-align: center;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Sombra en el menú */
     }
 
     .menu.active {
