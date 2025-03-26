@@ -24,5 +24,5 @@
     <div class="footer-bottom">
         <p>&copy; <?php echo date("Y"); ?> EscentialCore. Todos los derechos reservados.</p>
     </div>
-<link rel="stylesheet" href="/public/footer.css">
+<link rel="stylesheet" href="/footer.css">
 </footer>
