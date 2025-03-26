@@ -1,40 +1,16 @@
-/* menu.css */
-.header-container {
+/* ✅ Agregamos la clase .mobile para que solo se aplique en versión hamburguesa */
+.menu.mobile {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.menu.mobile.active {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    background: #222;
-    color: white;
-}
-
-.logo a {
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    font-weight: bold;
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
-}
-
-.menu {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menu li {
-    margin: 0 15px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
 }
 
 .menu-toggle {
@@ -43,30 +19,7 @@
     cursor: pointer;
 }
 
-.menu-toggle .bar {
-    background: white;
-    width: 25px;
-    height: 3px;
-    margin: 3px 0;
-    transition: 0.3s;
-}
-
-/* ✅ RESPONSIVE AUTOMÁTICO */
 @media (max-width: 768px) {
-    .menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background: rgba(0, 0, 0, 0.9);
-    }
-
-    .menu.active {
-        display: flex;
-    }
-
     .menu-toggle {
         display: flex;
     }
