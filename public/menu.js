@@ -1,19 +1,23 @@
-document.addEventListener("DOMContentLoaded", function () {
+// menu.js
+document.addEventListener("DOMContentLoaded", () => {
     const menuToggle = document.getElementById("menu-toggle");
     const menu = document.getElementById("menu");
 
-    // Función para alternar el menú
-    menuToggle.addEventListener("click", function (event) {
+    function checkMenuOverflow() {
+        const navbarWidth = document.querySelector(".navbar").offsetWidth;
+        const menuWidth = menu.scrollWidth;
+
+        if (menuWidth > navbarWidth) {
+            menu.classList.add("active");
+        } else {
+            menu.classList.remove("active");
+        }
+    }
+
+    menuToggle.addEventListener("click", () => {
         menu.classList.toggle("active");
-        menuToggle.classList.toggle("active");
-        event.stopPropagation(); // Evita que el clic se propague al document
     });
 
-    // Detectar clic fuera del menú y cerrarlo
-    document.addEventListener("click", function (event) {
-        if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
-            menu.classList.remove("active");
-            menuToggle.classList.remove("active");
-        }
-    });
+    window.addEventListener("resize", checkMenuOverflow);
+    checkMenuOverflow(); // Ejecutar al inicio
 });
