@@ -3,8 +3,7 @@ namespace App\Controllers;
 
 class HomeController {
     public function index() {
-            include '../app/views/header.php';
-                    include '../app/views/home.php';
-                            include '../app/views/footer.php';
-                                }
-                                }
+        // Cargar la vista principal
+        require_once "../app/views/home.php";
+    }
+}
