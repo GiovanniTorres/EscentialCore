@@ -13,12 +13,13 @@
 <body>
 
 <header>
-    <nav class="navbar">
-        <button class="menu-toggle" aria-label="Abrir menú">☰</button> 
-        <ul class="nav-menu">
-            <li><a href="/">Inicio</a></li>
-            <li><a href="/about">Sobre Nosotros</a></li>
-            <li><a href="/contact">Contacto</a></li>
-        </ul>
-    </nav>
+    <nav id="menu">
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <ul id="menu-list">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+    </ul>
+</nav>
 </header>
