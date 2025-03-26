@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Sitio Web</title>
+<script src="js/menu.js"></script>
     <link rel="stylesheet" href="menu.css"> <!-- Menú Estilos -->
     <link rel="stylesheet" href="style.css"> <!-- Estilos Generales -->
    <link rel="stylesheet" href="home.css"> <!-- Estilos Generales -->
