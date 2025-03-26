@@ -6,7 +6,7 @@
     <title>EscentialCore</title>
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="divs.css">
-<link rel="stylesheet" href="header.css">
+<link rel="stylesheet" href="menu.css">
 <link rel="stylesheet" href="footer.css">
  <!-- Enlace a estilos -->
 </head>
