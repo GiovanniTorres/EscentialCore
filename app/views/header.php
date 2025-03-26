@@ -30,6 +30,6 @@
         </div>
     </header>
 
-    <script src="js/menu.js"></script> <!-- Archivo JS para funcionalidad -->
+    <script src="menu.js"></script> <!-- Archivo JS para funcionalidad -->
 </body>
 </html>
