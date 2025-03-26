@@ -7,7 +7,8 @@ class Router {
         $url = $_GET['url'] ?? 'Home';  // Si no hay URL, asignamos 'home' como predeterminado
 
         // Convertir la URL en el nombre del controlador
-        $controllerName = ucfirst($url) . 'Controller';  // Convierte 'home' en 'HomeController'
+        //$controllerName = ucfirst($url) . 'Controller';  // Convierte 'home' en 'HomeController'
+  print $controllerName = ucfirst($url) . 'Controller';  // Convierte 'home' en 'HomeController'
         
         // Buscar el archivo del controlador
         $controllerFile = "../app/controllers/$controllerName.php";
