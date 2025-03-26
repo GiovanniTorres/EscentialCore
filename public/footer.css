@@ -1,71 +1,63 @@
-/* ======================== */
-/*       FOOTER PRO         */
-/* ======================== */
-
-.footer {
-    background: linear-gradient(to right, #222, #444);
-    color: white;
-    padding: 40px 0;
+/* Estilos generales del footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
     text-align: center;
 }
 
+/* Contenedor de los items */
 .footer-container {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: auto;
+    justify-content: space-around; /* Distribuye los items horizontalmente */
+    flex-wrap: wrap; /* Permite que los items se ajusten en dispositivos pequeños */
 }
 
-.footer-section {
-    flex: 1;
-    margin: 20px;
+/* Estilos de cada item */
+.footer-item {
+    margin: 10px;
+    flex: 1 1 30%; /* Cada item toma el 30% de la pantalla, pero puede ajustarse */
+    padding: 10px;
 }
 
-.footer-section h3 {
-    margin-bottom: 15px;
-    font-size: 20px;
-    border-bottom: 2px solid white;
-    display: inline-block;
-    padding-bottom: 5px;
+/* Títulos dentro del footer */
+.footer-item h3 {
+    margin-bottom: 10px;
 }
 
-.footer-section ul {
-    list-style: none;
+/* Estilos de los enlaces */
+.footer-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-item a:hover {
+    color: #FFD700;
+}
+
+/* Para los listados */
+.footer-item ul {
+    list-style-type: none;
     padding: 0;
 }
 
-.footer-section ul li {
-    margin: 10px 0;
+.footer-item li {
+    margin: 5px 0;
 }
 
-.footer-section ul li a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-section ul li a:hover {
-    color: #00bcd4;
-}
-
-/* --- Iconos sociales --- */
-.social-icons a {
-    color: white;
-    font-size: 24px;
-    margin: 0 10px;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.social-icons a:hover {
-    color: #00bcd4;
-    transform: scale(1.2);
-}
-
-/* --- Footer Bottom --- */
+/* Estilos para el pie de página */
 .footer-bottom {
     margin-top: 20px;
-    padding: 10px;
-    background: #111;
     font-size: 14px;
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Los items se alinean verticalmente */
+        text-align: left; /* Alineación a la izquierda */
+    }
+    .footer-item {
+        flex: 1 1 100%; /* Cada item toma el 100% del ancho */
+    }
 }
