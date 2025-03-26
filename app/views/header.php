@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EscentialCore</title>
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="divs.css">
 <link rel="stylesheet" href="menu.css">
+<link rel="stylesheet" href="divs.css">
 <link rel="stylesheet" href="footer.css">
+<link rel="stylesheet" href="style.css">
  <!-- Enlace a estilos -->
 </head>
 <body>
