@@ -124,9 +124,9 @@ ul.nav-links li a:hover {
 
 /* --- Estilos para la lista de navegación --- */
 .nav-menu {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+    list-style: none; !important
+    display: flex; !important
+    gap: 20px; !important
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
