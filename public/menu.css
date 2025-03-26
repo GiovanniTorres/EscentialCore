@@ -60,12 +60,11 @@
     margin: 4px 0;
     transition: all 0.3s ease;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Sombra */
-    transform-origin: 0% 50%; /* Origen de la transformación */
 }
 
-/* Cuando se active el menú hamburguesa */
+/* ✅ Efectos de animación para las barras */
 .menu-toggle.active .bar:nth-child(1) {
-    transform: translateY(7px) rotate(45deg); /* Efecto de la primera barra */
+    transform: translateY(7px) rotate(45deg); /* Primera barra rota */
 }
 
 .menu-toggle.active .bar:nth-child(2) {
@@ -73,12 +72,11 @@
 }
 
 .menu-toggle.active .bar:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg); /* Efecto de la tercera barra */
+    transform: translateY(-7px) rotate(-45deg); /* Tercera barra rota */
 }
 
-/* ✅ Movimiento adicional de las barras */
-.menu-toggle.active .bar:nth-child(1),
-.menu-toggle.active .bar:nth-child(3) {
+/* ✅ Animación de las barras al hacer clic */
+.menu-toggle.active .bar {
     animation: barMove 0.5s ease forwards;
 }
 
