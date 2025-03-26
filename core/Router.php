@@ -8,7 +8,7 @@ class Router {
 
         // Convertir la URL en el nombre del controlador
         //$controllerName = ucfirst($url) . 'Controller';  // Convierte 'home' en 'HomeController'
-  print $controllerName = ucfirst($url) . 'Controller';  // Convierte 'home' en 'HomeController'
+  print $controllerName = ucfirst($url) . 'Controller';  // Convierte 'home' en 'HomeController
         
         // Buscar el archivo del controlador
         $controllerFile = "../app/controllers/$controllerName.php";
