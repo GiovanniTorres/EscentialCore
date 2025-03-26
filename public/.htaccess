@@ -1,7 +1,7 @@
 RewriteEngine On
-RewriteBase /  
+RewriteBase /
 
-# Redirige todas las solicitudes a index.php
+# Redirige todo a index.php, excepto si es un archivo o carpeta existente
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
