@@ -10,7 +10,7 @@ class Router {
                                         $instance = new $controller();
                                                     $instance->index();
                                                             } else {
-                                                                        echo "Página no encontrada";
+                                                                        echo "Página no encontrada we";
                                                                                 }
                                                                                     }
                                                                                     }
