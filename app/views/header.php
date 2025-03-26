@@ -15,7 +15,7 @@
                 <a href="#">Mi Sitio</a>
             </div>
             <nav class="navbar">
-                <ul class="menu">
+                <ul class="menu" id="menu">
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Servicios</a></li>
                     <li><a href="#">Productos</a></li>
@@ -29,3 +29,7 @@
             </nav>
         </div>
     </header>
+
+    <script src="js/menu.js"></script> <!-- Archivo JS para funcionalidad -->
+</body>
+</html>
