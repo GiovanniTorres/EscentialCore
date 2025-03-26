@@ -5,12 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Sitio Web</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="menu.css"> <!-- Menú Estilos -->
-    <link rel="stylesheet" href="home.css"> <!-- Estilos Generales -->
-    <link rel="stylesheet" href="footer.css"> <!-- Estilos Generales -->
-
-</head
+    <link rel="stylesheet" href="css/menu.css"> <!-- Menú Estilos -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Estilos Generales -->
+</head>
 <body>
     <header>
         <div class="header-container">
@@ -32,7 +29,3 @@
             </nav>
         </div>
     </header>
-
-    <script src="menu.js"></script> <!-- Archivo JS para funcionalidad -->
-</body>
-</html>
