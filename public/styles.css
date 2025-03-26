@@ -1,65 +1,27 @@
-/* --------------------------- ESTILOS GENERALES --------------------------- */
-
-/* Normaliza márgenes y padding */
-* {
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* Establece un fondo y una tipografía global */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #fafafa;
+    background-color: #f4f4f4;
     color: #333;
 }
 
-/* Enlaces generales */
 a {
     text-decoration: none;
     color: inherit;
 }
 
-a:hover {
-    color: #FFD700;
-}
-
-/* Estilos para el contenedor principal */
-.container {
-    width: 90%;
-    margin: 0 auto;
-}
-
-/* Titulares generales */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Arial', sans-serif;
-    margin-bottom: 10px;
+    margin: 0;
+    padding: 0;
 }
 
-/* Estilo de botones generales */
-button, .btn {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
 }
 
-button:hover, .btn:hover {
-    background-color: #FFD700;
-}
-
-/* --------------------------- ESTILOS RESPONSIVOS --------------------------- */
-@media (max-width: 768px) {
-    /* Aquí puedes agregar reglas que afecten a todo el sitio cuando se ve en dispositivos pequeños */
-
-    .container {
-        width: 100%;
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 1.5rem;
-    }
-}
+/* Otros estilos generales */
