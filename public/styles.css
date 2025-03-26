@@ -1,0 +1,106 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Estilo de navegación */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 30px;
+}
+
+nav .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav .menu-icon {
+    display: none;
+    flex-direction: column;
+    width: 30px;
+    cursor: pointer;
+}
+
+nav .menu-icon .bar {
+    background-color: #fff;
+    height: 4px;
+    width: 100%;
+    margin: 4px 0;
+    transition: transform 0.3s ease;
+}
+
+/* Menú */
+ul.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+ul.nav-links li {
+    padding: 10px 20px;
+}
+
+ul.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+ul.nav-links li a:hover {
+    color: #f1c40f;
+}
+
+/* Estilos para los tres divs */
+.three-divs {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.three-divs .box {
+    background-color: #fff;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Responsividad */
+@media screen and (max-width: 768px) {
+    ul.nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .menu-icon {
+        display: flex;
+    }
+
+    .three-divs {
+        flex-direction: column;
+    }
+
+    .three-divs .box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
