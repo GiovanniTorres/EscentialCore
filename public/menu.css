@@ -1,72 +1,66 @@
-/* Encapsulación para evitar conflictos */
-.navbar {
-    position: relative;
-    background: #1f1f1f;
-    padding: 10px 20px;
+/* menu.css */
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px;
+    background: #222;
+    color: white;
 }
 
-/* Logo */
 .logo a {
-    font-size: 24px;
-    font-weight: bold;
-    color: #fff;
     text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
 }
 
-/* Menú */
-.menu {
-    list-style: none;
+.navbar {
     display: flex;
-    gap: 20px;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .menu li {
-    position: relative;
+    margin: 0 15px;
 }
 
 .menu a {
     text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    padding: 10px;
-    transition: 0.3s;
+    color: white;
+    font-size: 16px;
 }
 
-.menu a:hover {
-    color: #ffcc00;
-}
-
-/* Botón de menú hamburguesa */
 .menu-toggle {
     display: none;
     flex-direction: column;
     cursor: pointer;
 }
 
-.bar {
-    width: 30px;
-    height: 4px;
-    background-color: #fff;
-    margin: 4px 0;
+.menu-toggle .bar {
+    background: white;
+    width: 25px;
+    height: 3px;
+    margin: 3px 0;
     transition: 0.3s;
 }
 
-/* Responsividad */
+/* ✅ RESPONSIVE AUTOMÁTICO */
 @media (max-width: 768px) {
     .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
         position: absolute;
         top: 60px;
-        right: 0;
-        background: #333;
-        width: 200px;
-        flex-direction: column;
-        align-items: center;
-        display: none;
-        padding: 10px;
-        border-radius: 5px;
+        left: 0;
+        background: rgba(0, 0, 0, 0.9);
     }
 
     .menu.active {
@@ -75,17 +69,5 @@
 
     .menu-toggle {
         display: flex;
-    }
-
-    .menu-toggle.active .bar:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-    }
-    
-    .menu-toggle.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-    
-    .menu-toggle.active .bar:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -5px);
     }
 }
