@@ -1,6 +1,23 @@
-<!-- views/home.php -->
-<div class="container">
-    <div class="box">Div 1</div>
-    <div class="box">Div 2</div>
-    <div class="box">Div 3</div>
-</div>
+<!-- home.php -->
+<main>
+    <section class="intro">
+        <h1>Bienvenido a Mi Sitio Web</h1>
+        <p>Este es un ejemplo de cómo organizar un sitio web con estructura modular.</p>
+    </section>
+
+    <section class="features">
+        <h2>Servicios que ofrecemos</h2>
+        <div class="feature-item">
+            <h3>Servicio 1</h3>
+            <p>Descripción del servicio 1.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Servicio 2</h3>
+            <p>Descripción del servicio 2.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Servicio 3</h3>
+            <p>Descripción del servicio 3.</p>
+        </div>
+    </section>
+</main>
