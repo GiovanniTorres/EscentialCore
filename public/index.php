@@ -2,4 +2,6 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-echo "El servidor está funcionando correctamente.";
+// Capturar la URL solicitada
+$url = $_GET['url'] ?? 'home';
+echo "Has accedido a: " . htmlspecialchars($url);
