@@ -12,7 +12,7 @@
 
    <link rel="stylesheet" href="footer.css"> <!-- Estilos Generales -->
 
-<script src="js/menu.js"></script>
+<script src="menu.js"></script>
 
 </head>
 <body>
