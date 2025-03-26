@@ -122,12 +122,19 @@ ul.nav-links li a:hover {
     color: white;
 }
 
+
+
 /* --- Estilos para la lista de navegación --- */
 .nav-menu {
     list-style: none; !important
     display: flex; !important
     gap: 20px; !important
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+
+.nav-menu li {
+    list-style: none;
 }
 
 /* --- Menú oculto en móviles --- */
