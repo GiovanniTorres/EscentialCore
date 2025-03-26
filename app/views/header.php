@@ -7,7 +7,9 @@
     <title>Mi Sitio Web</title>
     <link rel="stylesheet" href="menu.css"> <!-- Menú Estilos -->
     <link rel="stylesheet" href="home.css"> <!-- Estilos Generales -->
-</head>
+    <link rel="stylesheet" href="footer.css"> <!-- Estilos Generales -->
+
+</head
 <body>
     <header>
         <div class="header-container">
