@@ -6,3 +6,4 @@ class HomeController {
         echo "Bienvenido a la página de inicio.";
     }
 }
+//
