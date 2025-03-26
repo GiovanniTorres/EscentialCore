@@ -7,7 +7,7 @@ class Router {
 
         // Convertir la URL en nombre de controlador
         $controllerName = ucfirst(strtolower($url)) . "Controller";
-        $controllerClass = "app\\Controllers\\" . $controllerName;
+        $controllerClass = "app\\controllers\\" . $controllerName;
 
         // Verificar si el controlador existe
         if (class_exists($controllerClass)) {
