@@ -4,7 +4,7 @@ namespace Core;
 class Router {
     public function handleRequest() {
         // Obtener la URL de la petición
-        $url = $_GET['url'] ?? 'home';  // Si no hay URL, asignamos 'home' como predeterminado
+        $url = $_GET['url'] ?? 'Home';  // Si no hay URL, asignamos 'home' como predeterminado
 
         // Convertir la URL en el nombre del controlador
         $controllerName = ucfirst($url) . 'Controller';  // Convierte 'home' en 'HomeController'
