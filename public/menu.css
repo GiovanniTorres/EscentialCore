@@ -2,6 +2,7 @@
 .header-container {
     background: #111; /* Más oscuro */
     color: white;
+    position: relative;
     box-shadow: 0 4px 10px rgba(255, 0, 0, 0.2); /* Sombra roja sutil */
 }
 
