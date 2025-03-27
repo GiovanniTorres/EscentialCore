@@ -1,5 +1,9 @@
 /* ✅ Estilos base */
 .header-container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+padding: 15px;
     background: #111; /* Más oscuro */
     color: white;
     position: relative;
