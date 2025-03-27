@@ -43,7 +43,7 @@ transition: color 0.3s;
 color: #00bcd4;
 }
 
-/* ✅ Menú hamburguesa /
+/* ✅ Menú hamburguesa /*
 .menu-toggle {
 display: none;
 flex-direction: column;
