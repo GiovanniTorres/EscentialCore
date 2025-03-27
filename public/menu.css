@@ -63,7 +63,7 @@ transition: all 0.3s ease;
 box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); / Sombra */
 }
 
-/* ✅ Efectos para cruzar las barras y formar una "X" /
+/* ✅ Efectos para cruzar las barras y formar una "X" */
 .menu-toggle.active .bar:nth-child(1) {
 transform: translateY(8px) rotate(45deg); / Primera barra rotada */
 }
@@ -76,7 +76,7 @@ opacity: 0; /* La segunda barra desaparece */
 transform: translateY(-8px) rotate(-45deg); /* Tercera barra rotada */
 }
 
-/* ✅ Responsivo (cuando la pantalla sea pequeña) /
+/* ✅ Responsivo (cuando la pantalla sea pequeña) */
 @media (max-width: 768px), (max-width: 1000px) and (max-content) {
 .menu {
 display: none;
