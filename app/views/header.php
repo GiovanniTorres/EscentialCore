@@ -21,7 +21,7 @@
     <header>
         <div class="header-container">
             <div class="logo">
-                <a href="#">Mi Sitio</a>
+                <a href="#">redLigths()</a>
             </div>
             <nav class="navbar">
                 <ul class="menu" id="menu">
