@@ -1,60 +1,106 @@
 /* ✅ Estilos base */
 .header-container {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
+display: flex;
+justify-content: space-between;
+align-items: center;
 padding: 15px;
-    background: #111; /* Más oscuro */
-    color: white;
-    position: relative;
-    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.2); /* Sombra roja sutil */
+background: #222;
+color: white;
+position: relative;
 }
 
 .logo a {
-    font-size: 22px;
-    font-weight: bold;
-    text-shadow: 0 0 8px rgba(255, 0, 0, 0.7); /* Efecto neón rojo */
+text-decoration: none;
+font-size: 20px;
+color: white;
+font-weight: bold;
+}
+
+.navbar {
+display: flex;
+align-items: center;
+}
+
+.menu {
+display: flex;
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.menu li {
+margin: 0 15px;
 }
 
 .menu a {
-    color: rgba(255, 255, 255, 0.8);
-    transition: color 0.3s, text-shadow 0.3s;
+text-decoration: none;
+color: white;
+font-size: 16px;
+transition: color 0.3s;
 }
 
 .menu a:hover {
-    color: #ff1744; /* Rojo más intenso */
-    text-shadow: 0 0 12px rgba(255, 23, 68, 0.8); /* Brillo rojo */
+color: #00bcd4;
 }
 
-/* ✅ Menú hamburguesa */
+/* ✅ Menú hamburguesa /
+.menu-toggle {
+display: none;
+flex-direction: column;
+cursor: pointer;
+padding: 10px;
+transition: all 0.3s ease;
+z-index: 100; / Asegura que siempre esté encima del contenido */
+}
+
+/* Barras de la hamburguesa /
 .menu-toggle .bar {
-    background: #ff1744; /* Rojo vibrante */
-    box-shadow: 0 0 10px rgba(255, 23, 68, 0.8); /* Efecto neón */
+background: white;
+width: 30px;
+height: 4px;
+margin: 4px 0;
+transition: all 0.3s ease;
+box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); / Sombra */
 }
 
-/* ✅ Animación al activar */
-.menu-toggle.active .bar:nth-child(1),
+/* ✅ Efectos para cruzar las barras y formar una "X" /
+.menu-toggle.active .bar:nth-child(1) {
+transform: translateY(8px) rotate(45deg); / Primera barra rotada */
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+opacity: 0; /* La segunda barra desaparece */
+}
+
 .menu-toggle.active .bar:nth-child(3) {
-    background: white; /* Cambio a blanco para contraste */
+transform: translateY(-8px) rotate(-45deg); /* Tercera barra rotada */
 }
 
-/* ✅ Menú desplegable en mobile */
-@media (max-width: 768px) {
-    .menu {
-        background: rgba(10, 10, 10, 0.95);
-        border-top: 2px solid rgba(255, 0, 0, 0.5); /* Línea roja arriba */
-    }
+/* ✅ Responsivo (cuando la pantalla sea pequeña) /
+@media (max-width: 768px), (max-width: 1000px) and (max-content) {
+.menu {
+display: none;
+flex-direction: column;
+width: 100%;
+position: absolute;
+top: 60px;
+left: 0;
+background: rgba(0, 0, 0, 0.9);
+padding: 10px 0;
+text-align: center;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); / Sombra en el menú */
+}
 
-    .menu li {
-        padding: 10px 0;
-    }
+.menu.active {  
+    display: flex;  
+}  
 
-    .menu a {
-        font-size: 18px;
-    }
+.menu li {  
+    margin: 10px 0;  
+}  
 
-    .menu a:hover {
-        color: white;
-        text-shadow: 0 0 15px rgba(255, 0, 0, 1);
-    }
+.menu-toggle {  
+    display: flex;  
+}
+
 }
