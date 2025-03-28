@@ -63,7 +63,7 @@
 /* Efecto hover */
 .feature-item:hover {
     transform: translateY(-5px);
-    background: rgba(70, 0, 0, 1.0);
+    background: rgba(0, 0, 0, 1.0);
 }
 
 /* Responsive: Apila los servicios en pantallas pequeñas */
