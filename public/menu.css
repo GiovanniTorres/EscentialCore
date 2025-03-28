@@ -9,14 +9,14 @@ color: white;
 position: relative;
 }
 
-.parentesis {color:red;}
-
 .logo a {
 text-decoration: none;
 font-size: 20px;
 color: red;
 font-weight: bold;
 }
+
+#parentesis {color:red;}
 
 .navbar {
 display: flex;
