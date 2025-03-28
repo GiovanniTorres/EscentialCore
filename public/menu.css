@@ -9,7 +9,10 @@ color: white;
 position: relative;
 }
 
-.nombre{color:red;}
+.nombre{
+color:red;
+text-decoration: none;
+}
 
 .logo a {
 text-decoration: none;
