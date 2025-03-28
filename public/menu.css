@@ -42,7 +42,7 @@ transition: color 0.3s;
 }
 
 .menu a:hover {
-color: #00bcd4;
+color: red;
 }
 
 /* ✅ Menú hamburguesa */
