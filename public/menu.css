@@ -9,6 +9,8 @@ color: white;
 position: relative;
 }
 
+.name{color:red;}
+
 .logo a {
 text-decoration: none;
 font-size: 20px;
