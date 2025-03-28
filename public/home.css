@@ -50,7 +50,7 @@
 .feature-item {
     flex: 1;
     min-width: 250px;
-    background: rgba(0, 0, 0, 0.3); /* Fondo oscuro con transparencia */
+    background: rgba(40, 0, 0, 0.3); /* Fondo oscuro con transparencia */
     color: white;
     padding: 20px;
     border-radius: 8px;
