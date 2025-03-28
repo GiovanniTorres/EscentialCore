@@ -21,7 +21,7 @@
     <header>
         <div class="header-container">
             <div class="logo">
-                <a href="#">redLigths()</a>
+                <a href="#" class="nombre">redLigths()</a>
             </div>
             <nav class="navbar">
                 <ul class="menu" id="menu">
