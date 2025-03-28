@@ -9,15 +9,10 @@ color: white;
 position: relative;
 }
 
-.nombre{
-color:red;
-text-decoration: none;
-}
-
 .logo a {
 text-decoration: none;
 font-size: 20px;
-color: white;
+color: red;
 font-weight: bold;
 }
 
