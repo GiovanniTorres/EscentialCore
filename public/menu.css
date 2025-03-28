@@ -62,7 +62,7 @@ width: 30px;
 height: 4px;
 margin: 4px 0;
 transition: all 0.3s ease;
-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); / Sombra */
+box-shadow: 0 0 8px rgba(0, 0, 0, 1); / Sombra */
 }
 
 /* ✅ Efectos para cruzar las barras y formar una "X" */
@@ -90,7 +90,7 @@ left: 0;
 background: rgba(0, 0, 0, 0.9);
 padding: 10px 0;
 text-align: center;
-box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); / Sombra en el menú */
+box-shadow: 0 0 15px rgba(0, 0, 0, 1); / Sombra en el menú */
 }
 
 .menu.active {  
