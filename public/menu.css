@@ -87,7 +87,7 @@ width: 100%;
 position: absolute;
 top: 60px;
 left: 0;
-background: rgba(0, 0, 0, 0.9);
+background: rgba(0, 0, 0, 0);
 padding: 10px 0;
 text-align: center;
 box-shadow: 0 0 15px rgba(0, 0, 0, 1); / Sombra en el menú */
