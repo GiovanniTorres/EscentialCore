@@ -26,9 +26,9 @@
             <nav class="navbar">
                 <ul class="menu" id="menu">
                     <li><a href="?views=home">Inicio</a></li>
-                    <li><a href="?views=product">Servicios</a></li>
-                    <li><a href="?views=home">Productos</a></li>
-                    <li><a href="?views=home">Contacto</a></li>
+                    <li><a href="?views=product">Productos</a></li>
+                    <li><a href="?views=contact">Contacto</a></li>
+                    <li><a href="?views=about">Sobre Nosotros</a></li>
                 </ul>
                 <div class="menu-toggle" id="menu-toggle">
                     <span class="bar"></span>
